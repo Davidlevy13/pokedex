@@ -45,12 +45,10 @@ function App() {
         {
           <ul>
           {pokemonList.map((PokemonCard) => (
-            <>
             <li key={PokemonCard.name}>
               {PokemonCard.name}
+            <button type="button" onClick={() => setPokemonName(PokemonCard.name)}>Cliquez-ici</button>
             </li>
-            <button onClick={() => setPokemonName(PokemonCard.name)}></button>
-            </>
           ))}
         </ul>
         }
